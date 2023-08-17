@@ -1,0 +1,23 @@
++-----------------+     +----------------+     +----------------+      +----------------+
+|    Visitor      |     |    Facility    |     |     Booking    |      | SecurityGuard  |
++-----------------+     +----------------+     +----------------+      +----------------+
+| VisitorID [PK]  |     | FacilityID [PK]|     | BookingID [PK] |      | GuardID [PK]   |
+| Name            |     | Name           |     | FacilityID [FK]|      |  Name          |
+| ContactInfo     |     | Type           |     | UserID [FK]    |      |  Password      |
+| Purpose         |     | Availability   |     | BookingDate    |      +----------------+
+| CheckInTime     |     +----------------+     | Status         |      
+| CheckOutTime    |                            +----------------+
++-----------------+
+
+  +------------+      +----------+         +-------------+    +--------------+   
+  |   Event    |      |  User    |         |  Admin      |    |     News     |
+  +------------+      +----------+         +-------------+    +--------------+
+  | EventID    |      | UserID   |         | AdminID [PK]|    |  NewsID [PK] |
+  | Title      |      | UserType |         | Name        |    |  Title       |
+  | Description|      | Username |         | Password    |    |  Content     |
+  | Date       |      | Password |         +-------------+    |  Date        |
+  +------------+      +----------+                            +--------------+
+
+Legend:
+- [PK]: Primary Key
+- [FK]: Foreign Key

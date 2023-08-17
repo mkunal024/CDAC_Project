@@ -1,0 +1,18 @@
+Entities:
+- Visitor (VisitorID [PK], Name, ContactInfo, Purpose, CheckInTime, CheckOutTime)
+- Facility (FacilityID [PK], Name, Type, Availability)
+- Booking (BookingID [PK], FacilityID [FK], UserID [FK], BookingDate, Status)
+- Event (EventID [PK], Title, Description, Date)
+- Admin (AdminID [PK], Name, Password)
+- User (UserID [PK], UserType, Username, Password)
+- News (NewsID [PK], Title, Content, Date)
+- SecurityGuard (GuardID [PK], Name, Password)
+
+Relationships:
+- User-Booking (One-to-Many): UserID [FK] in Booking
+- User-Event (One-to-Many): UserID [FK] in Event
+- User-News (One-to-Many): UserID [FK] in News
+- Admin-Booking (One-to-Many): AdminID [FK] in Booking
+- Admin-Event (One-to-Many): AdminID [FK] in Event
+- Admin-News (One-to-Many): AdminID [FK] in News
+
