@@ -1,0 +1,68 @@
+
+-- create visitors table
+CREATE TABLE Visitor (
+    VisitorID INT PRIMARY KEY,
+    Name VARCHAR(30),
+    ContactInfo VARCHAR(20),
+    Purpose VARCHAR(255),
+    CheckInTime DATETIME,
+    CheckOutTime DATETIME
+);
+
+-- Creating the Facility table
+CREATE TABLE Facility (
+    FacilityID INT PRIMARY KEY,
+    Name VARCHAR(30),
+    Type VARCHAR(10),
+    Availability BOOLEAN
+);
+
+-- Creating the Booking table
+CREATE TABLE Booking (
+    BookingID INT PRIMARY KEY,
+    FacilityID INT,
+    UserID INT,
+    BookingDate DATETIME,
+    Status VARCHAR(10),
+    FOREIGN KEY (FacilityID) REFERENCES Facility(FacilityID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID)
+);
+
+-- Creating the Event table
+CREATE TABLE Event (
+    EventID INT PRIMARY KEY,
+    Title VARCHAR(255),
+    Description TEXT,
+    Date DATE
+);
+
+-- Creating the Admin table
+CREATE TABLE Admin (
+    AdminID INT PRIMARY KEY,
+    Name VARCHAR(15),
+    Password VARCHAR(15)
+);
+
+-- Creating the User table
+CREATE TABLE User (
+    UserID INT PRIMARY KEY,
+    UserType VARCHAR(10),
+    Username VARCHAR(15),
+    Password VARCHAR(15)
+);
+
+-- Creating the News table
+CREATE TABLE News (
+    NewsID INT PRIMARY KEY,
+    Title VARCHAR(255),
+    Content TEXT,
+    Date DATE
+);
+
+-- Creating the SecurityGuard table
+CREATE TABLE SecurityGuard (
+    GuardID INT PRIMARY KEY,
+    Name VARCHAR(30),
+    Password VARCHAR(15)
+);
+
