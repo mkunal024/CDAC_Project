@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Breaking News: New Discovery on Mars",
+      "category": "Science",
+      "date": "2023-08-27",
+      "author": "John Smith",
+      "content": "Scientists have made a groundbreaking discovery on Mars, revealing evidence of ancient microbial life."
+    },
+    {
+      "title": "Tech Giant's New Product Launch Event",
+      "category": "Technology",
+      "date": "2023-08-26",
+      "author": "Emily Johnson",
+      "content": "TechCo unveiled their latest product lineup, including a revolutionary smart device that aims to redefine modern living."
+    },
+    {
+      "title": "Global Health Initiative Takes Action",
+      "category": "Health",
+      "date": "2023-08-25",
+      "author": "Sarah Lee",
+      "content": "In an effort to combat the rising health challenges, an international coalition has launched a comprehensive health initiative."
+    },
+    {
+      "title": "Political Summit Addresses Global Climate Crisis",
+      "category": "Politics",
+      "date": "2023-08-24",
+      "author": "Michael Johnson",
+      "content": "World leaders gathered at the summit to discuss strategies for tackling the urgent global climate crisis."
+    },
+    {
+        "title": "Breaking News: New Discovery on Mars",
+        "category": "Science",
+        "date": "2023-08-27",
+        "author": "John Smith",
+        "content": "Scientists have made a groundbreaking discovery on Mars, revealing evidence of ancient microbial life."
+      },
+      {
+        "title": "Tech Giant's New Product Launch Event",
+        "category": "Technology",
+        "date": "2023-08-26",
+        "author": "Emily Johnson",
+        "content": "TechCo unveiled their latest product lineup, including a revolutionary smart device that aims to redefine modern living."
+      },
+      {
+        "title": "Global Health Initiative Takes Action",
+        "category": "Health",
+        "date": "2023-08-25",
+        "author": "Sarah Lee",
+        "content": "In an effort to combat the rising health challenges, an international coalition has launched a comprehensive health initiative."
+      },
+      {
+        "title": "Political Summit Addresses Global Climate Crisis",
+        "category": "Politics",
+        "date": "2023-08-24",
+        "author": "Michael Johnson",
+        "content": "World leaders gathered at the summit to discuss strategies for tackling the urgent global climate crisis."
+      },
+      {
+        "title": "Art Exhibition Showcases Diverse Creations",
+        "category": "Arts",
+        "date": "2023-08-23",
+        "author": "Sophia Anderson",
+        "content": "The annual art exhibition celebrates creativity, featuring a wide range of artistic expressions and styles."
+      }
+  ]
+  

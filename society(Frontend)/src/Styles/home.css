@@ -1,0 +1,15 @@
+.home-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+.home-img img{
+    border-radius: 1rem;
+    box-shadow: rgba(0,0,0,0.6);
+}
+.login-form{
+    border-radius: 1rem;
+    box-shadow: rgba(0,0,0,0.6);
+    float: left;
+}

@@ -1,0 +1,22 @@
+.news-container {
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.news-item {
+  width: 100%;
+  animation: scrollNews 20s linear infinite;
+}
+
+@keyframes scrollNews {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
