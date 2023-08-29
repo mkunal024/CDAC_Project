@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 import { Table } from 'react-bootstrap';
 import "../Styles/adduser.css";
-import AddBooking from '../component/Booking/AddBooking';
+import AddBookingOwner from '../component/Booking/AddBookingOwner';
 import UpdateBooking from '../component/Booking/UpdateBooking';
 
 const Booking = () => {
@@ -17,8 +17,8 @@ const Booking = () => {
   const hno=localStorage.getItem('houseNo');
 
   const fetchUsers = async (e) => {
-    const url = `http://localhost:8080/Booking/get`; // Replace with your actual API endpoint
-
+    const url = `http://localhost:8080/Booking/get/${hno}`;
+    
     try {
       const response = await axios.get(url);
 
@@ -124,7 +124,7 @@ const Booking = () => {
       </div>
       <div className='user-add'>
 
-        {btn === "add" && <AddBooking />}
+        {btn === "add" && <AddBookingOwner />}
         {btn === "update" && <UpdateBooking data={credentials} />}
 
       </div>

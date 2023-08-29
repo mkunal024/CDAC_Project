@@ -1,5 +1,6 @@
 package com.app.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
@@ -34,7 +35,7 @@ public class BookingServiceImpl implements BookingService{
 		
 		Booking book=mapper.map(b, Booking.class);
 		User u=uImp.getUserById(b.getUserId());
-		Facility f=fImp.getFacilityById(b.getUserId());
+		Facility f=fImp.getFacilityById(b.getFacilityCodeNo());
 		book.setFacilityCodeNo(f);
 		book.setUserId(u);
 		return bRepo.save(book);
@@ -68,6 +69,23 @@ public class BookingServiceImpl implements BookingService{
 
 		return msg;
 	}
+
+	@Override
+	public List<Booking> getBookingByUserId(Long Id) {
+		
+		List<Booking> book1=new ArrayList<>();
+		List<Booking> book=bRepo.findAll();
+		for(Booking b: book)
+		{
+			if(b.getUserId().getHouseNo()==Id)
+			{
+				book1.add(b);
+			}
+		}
+		return book1;
+	}
+	
+	
 
 	
 }

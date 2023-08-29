@@ -15,7 +15,7 @@ const Admin = () => {
      <>
          {userRole==='ADMIN'? <div className='admin-container'>
             <div className='news'>
-                <h3><i>News</i></h3>
+                <h3><i><Link to="/admin/news">News</Link></i></h3>
                 <News/>
             </div>
             <div className='admin-contents'>
@@ -36,10 +36,11 @@ const Admin = () => {
                             <Link to="/booking"><div className='table-div-booking'>Booking </div></Link>
                         </td>
                     </tr>
+                    
                 </table>
             </div>
             <div className='events'>
-                <h3><i>Events</i></h3>
+                <h3><i> <Link to="/admin/news">Events</Link></i></h3>
                 <Event/>
             </div>
         </div>: <div ><h1 className='alert'> You are not authorized </h1></div> }

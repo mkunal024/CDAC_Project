@@ -12,6 +12,9 @@ import Show from '../pages/Show'
 import FacilityOwner from '../pages/FacilityOwner'
 import BookingOwner from '../pages/BookingOwner'
 import SecurityGuardVisitor from '../pages/SecurityGuardVisitor'
+import AdminNews from '../pages/AdminNews'
+import NewsAdmin from '../pages/NewsAdmin'
+import EventAdmin from '../pages/EventAdmin'
 
 const router = () => {
   return (
@@ -29,7 +32,9 @@ const router = () => {
       <Route path='/facilityOwner' element={<FacilityOwner/>} />
       <Route path='/bookingOwner' element={<BookingOwner/>} />
       <Route path='/securityGuard/visitor' element={<SecurityGuardVisitor/>} />
-
+      <Route path='/admin/news' element={<AdminNews/>} />
+      <Route path='/news' element={<NewsAdmin/>} />
+      <Route path='/event' element={<EventAdmin/>} />
     </Routes>
   )
 }

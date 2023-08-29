@@ -89,7 +89,7 @@ const Visitor = () => {
         <Button onClick={fetchUsers} style={{ marginRight: '20px' }}>Fetch Visitor List</Button>
 
         <Button value="add" onClick={() => handleButton("add")}>Add New Visitor</Button>
-        <h2>User List</h2>
+        <h2>Visitor List</h2>
         <Table striped bordered hover>
           <thead>
             <tr>

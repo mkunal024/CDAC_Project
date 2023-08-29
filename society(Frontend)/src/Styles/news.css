@@ -9,7 +9,19 @@
 
 .news-item {
   width: 100%;
+  display: block;
+  margin-bottom: 20px;
   animation: scrollNews 20s linear infinite;
+}
+
+.news-date {
+  font-weight: bold;
+  color: #333;
+}
+
+.news-content {
+  margin-top: 5px;
+  color: #666;
 }
 
 @keyframes scrollNews {

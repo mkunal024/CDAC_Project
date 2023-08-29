@@ -50,6 +50,11 @@ public class BookingController {
 		return bService.deleteBooking(id);
 	}
 	
+	@GetMapping("/get/{id}")
+	public List<Booking> getBookingByUserId(@PathVariable("id") Long id)
+	{
+		return bService.getBookingByUserId(id);
+	}
 	
 
 	

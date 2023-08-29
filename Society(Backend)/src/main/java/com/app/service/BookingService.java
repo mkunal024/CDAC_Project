@@ -14,6 +14,8 @@ public interface BookingService {
     Booking updateBooking(Booking b);
 
 	String deleteBooking(Long id);
+	
+	List<Booking> getBookingByUserId(Long Id);
 
 
 

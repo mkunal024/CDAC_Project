@@ -1,5 +1,5 @@
 package com.app.entity;
 
 public enum Facilities {
-MEETINGHALL,PARTYHALL;
+MEETINGHALL,PARTYHALL,SWIMMINGPOOL;
 }

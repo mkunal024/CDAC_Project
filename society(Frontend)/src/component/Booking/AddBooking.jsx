@@ -14,7 +14,7 @@ const AddBooking = () => {
         bookedOn:new Date().toISOString().split('T')[0],
         bookingDate:"",
         facilityCodeNo: "",
-        userId: undefined,
+        userId: "",
     
     });
 
@@ -65,7 +65,7 @@ const AddBooking = () => {
 
                 </Form.Group> 
                 <Form.Group className="mb-3" controlId="facilityCodeNo">
-                    <Form.Label>Facility Name</Form.Label>
+                    <Form.Label>Facility Code Number</Form.Label>
                     <Form.Control type="text" placeholder="Name" onChange={handleChange} />
 
                 </Form.Group>
